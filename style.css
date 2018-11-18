@@ -1,0 +1,57 @@
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-play-state:  running;
+    animation-fill-mode: forwards;
+}
+
+.box:hover{
+    animation-play-state:  paused;
+}
+
+@keyframes move{
+/*
+    from {
+        background-color: beige;
+    }
+    to {
+        top: 200px;
+        left: 200px;
+    }
+*/
+    
+    0%{
+        background-color: beige;
+    }
+    
+    50% {
+        left: 800px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    75% {
+        border-radius: 50%;
+    }
+    
+    100% {
+        top: 200px;
+        left: 200px;
+        background-color: aquamarine;
+        border: 2px solid black;
+    }
+    
+}
